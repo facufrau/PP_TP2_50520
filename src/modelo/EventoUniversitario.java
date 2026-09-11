@@ -4,11 +4,12 @@ import modelo.actividades.Actividad;
 import modelo.actividades.Charla;
 import modelo.actividades.Taller;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class EventoUniversitario {
+public class EventoUniversitario implements Serializable {
     private final String id;
     private String titulo;
     private double costoBase;
@@ -165,6 +166,26 @@ public class EventoUniversitario {
     public List<Actividad> getActividades() {
         // Permite modificarlas desde afuera ya que devuelve la lista completa
         return actividades;
+    }
+
+    // Métodos para persistencia y lectura de archivos
+    public boolean persistirEvento() throws IOException {
+        String nombreArchivo = "evento-" + this.id + ".dat";
+        FileOutputStream ofos = null;
+        ObjectOutputStream oos = null;
+
+        try {
+            ofos = new FileOutputStream(nombreArchivo);
+            oos = new ObjectOutputStream(ofos);
+            oos.writeObject(this);
+        }
+        finally {
+            if (oos != null) {
+                oos.close();
+            } else if (ofos != null) {
+                ofos.close();
+            }
+        }
     }
 
 }
