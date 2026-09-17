@@ -23,9 +23,9 @@ public class Taller extends Actividad implements Certificable {
     @Override
     public double calcularCostoMateriales() {
         if (this.requiereNotebook) {
-            return 5000.0;
+            return 3500.0;
         } else {
-            return 2000.0;
+            return 1300.0;
         }
     }
 

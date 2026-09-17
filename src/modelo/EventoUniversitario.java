@@ -2,10 +2,12 @@ package modelo;
 
 import modelo.actividades.Actividad;
 import modelo.actividades.Charla;
+import modelo.actividades.Curso;
 import modelo.actividades.Taller;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -157,6 +159,12 @@ public class EventoUniversitario implements Serializable {
                 Actividad taller = new Taller(idnum, titulo, cupo, requiereNotebook);
                 this.actividades.add(taller);
                 break;
+            case "curso":
+                System.out.println("Ingrese el nivel del curso " + titulo + ": ");
+                int nivel = reader.nextInt();
+                Actividad curso = new Curso(idnum, titulo, cupo, nivel);
+                this.actividades.add(curso);
+                break;
             default:
                 System.out.println("ERROR: modelo.actividades.Actividad no válida");
         }
@@ -164,8 +172,8 @@ public class EventoUniversitario implements Serializable {
 
     // Retornar la lista de las actividades disponibles
     public List<Actividad> getActividades() {
-        // Permite modificarlas desde afuera ya que devuelve la lista completa
-        return actividades;
+        // No permite modificaciones, solo lectura de lista actividades.
+        return Collections.unmodifiableList(actividades);
     }
 
     // Métodos para persistencia y lectura de archivos
@@ -178,6 +186,7 @@ public class EventoUniversitario implements Serializable {
             ofos = new FileOutputStream(nombreArchivo);
             oos = new ObjectOutputStream(ofos);
             oos.writeObject(this);
+            return true;
         }
         finally {
             if (oos != null) {
@@ -188,4 +197,12 @@ public class EventoUniversitario implements Serializable {
         }
     }
 
+    public EventoUniversitario recuperarEvento(String id) throws IOException, ClassNotFoundException {
+        String nombreArchivoRec = "evento-" + id + ".dat";
+        try (ObjectInputStream ois =
+                     new ObjectInputStream(new FileInputStream(nombreArchivoRec))) {
+
+            return (EventoUniversitario) ois.readObject();
+        }
+    }
 }

@@ -3,6 +3,8 @@ package modelo.actividades;
 import modelo.Estudiante;
 import modelo.certificacion.Certificable;
 
+import java.io.Serializable;
+
 public class Curso extends Actividad implements Certificable {
 
     private int nivel;
@@ -22,7 +24,9 @@ public class Curso extends Actividad implements Certificable {
 
     @Override
     public double calcularCostoMateriales() {
-        if (this.nivel < 2) {
+        if (this.nivel < 1) {
+            return 0.0;
+        } else if (this.nivel < 3) {
             return 1250.0;
         } else {
             return 2500.0;
