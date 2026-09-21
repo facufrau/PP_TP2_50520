@@ -205,4 +205,15 @@ public class EventoUniversitario implements Serializable {
             return (EventoUniversitario) ois.readObject();
         }
     }
+
+    // metodo parametrizado para filtrar actividades de tipo Actividad. Ejercicio 3
+    public <T extends Actividad> List<T> filtrarActividadesPorTipo(Class<T> tipo) {
+        List<T> resultado = new ArrayList<>();
+        for (Actividad actividad : actividades) {
+            if (tipo.isInstance(actividad)) {
+                resultado.add(tipo.cast(actividad));
+            }
+        }
+        return resultado;
+    }
 }

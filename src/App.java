@@ -129,5 +129,7 @@ public class App {
                 }
             }
         }
+
+        // k-filtrado de actividades y uso de wildcards / parametros
     }
 }
