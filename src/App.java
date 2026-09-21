@@ -4,6 +4,9 @@ import modelo.EventoUniversitario;
 import modelo.Inscripcion;
 import modelo.Sala;
 import modelo.actividades.Actividad;
+import modelo.actividades.Charla;
+import modelo.actividades.Curso;
+import modelo.actividades.Taller;
 import modelo.certificacion.Certificable;
 
 import java.io.File;
@@ -44,6 +47,8 @@ public class App {
         evento1.crearActividad(2, "Instalando Linux en Cloud", 20, "taller");
         evento1.crearActividad(3, "Usando la consola y programación en bash", 2, "taller");
         evento1.crearActividad(4, "Curso de uso de AWS y EC2", 15, "curso");
+        evento1.crearActividad(4, "Curso de Docker básico", 30, "curso");
+        evento1.crearActividad(4, "Charla de Azure y GCP", 10, "charla");
 
         // e-Inscribimos estudiantes en cada actividad
         // En charla
@@ -131,5 +136,22 @@ public class App {
         }
 
         // k-filtrado de actividades y uso de wildcards / parametros
+        System.out.println("\n\n----- Uso de filtro para la lista de actividades -----");
+        List<Taller> talleresCreados = evento1.filtrarActividadesPorTipo(Taller.class);
+        List<Curso> cursosCreados = evento1.filtrarActividadesPorTipo(Curso.class);
+        List<Charla> charlasCreados = evento1.filtrarActividadesPorTipo(Charla.class);
+
+        System.out.println("Charlas: " + charlasCreados.size());
+        System.out.println("Talleres: " + talleresCreados.size());
+        System.out.println("Cursos: " + cursosCreados.size());
+
+        System.out.println("Costo talleres: $" + evento1.calcularCostoMateriales(talleresCreados));
+        System.out.println("Costo cursos: $" + evento1.calcularCostoMateriales(cursosCreados));
+        System.out.println("Costo Charlas: $" + evento1.calcularCostoMateriales(charlasCreados));
+
+        System.out.println("Costo total: $" + evento1.calcularCostoMateriales(evento1.getActividades()));
+
+
+
     }
 }

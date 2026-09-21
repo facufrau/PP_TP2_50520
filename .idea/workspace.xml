@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="342a6db0-c6e7-40f5-bd62-cda1c9186735" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evento-1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/evento-1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PP_TP2_50520/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PP_TP2_50520/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PP_TP2_50520/modelo/EventoUniversitario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PP_TP2_50520/modelo/EventoUniversitario.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modelo/EventoUniversitario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/EventoUniversitario.java" afterDir="false" />
     </list>
@@ -29,6 +32,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3,
+  "fromUser": false
+}]]></component>
   <component name="ProjectId" id="3J9atDHvrQPymiMsZwJvtfAdOPj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,13 +43,24 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.App.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Alumno/Documents/50520/PP_TP2_50520"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.33813.55" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

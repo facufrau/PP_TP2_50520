@@ -216,4 +216,12 @@ public class EventoUniversitario implements Serializable {
         }
         return resultado;
     }
+
+    public double calcularCostoMateriales(List<? extends Actividad> actividades) {
+        double total = 0.0;
+        for (Actividad actividad : actividades) {
+            total += actividad.calcularCostoMateriales();
+        }
+        return total;
+    }
 }
