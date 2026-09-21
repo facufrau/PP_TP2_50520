@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="342a6db0-c6e7-40f5-bd62-cda1c9186735" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evento-1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/evento-1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PP_TP2_50520/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PP_TP2_50520/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PP_TP2_50520/modelo/EventoUniversitario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PP_TP2_50520/modelo/EventoUniversitario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/EventoUniversitario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/EventoUniversitario.java" afterDir="false" />
-    </list>
+    <list default="true" id="342a6db0-c6e7-40f5-bd62-cda1c9186735" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
