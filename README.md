@@ -1,6 +1,6 @@
-# TP1 - Ejercicio Evento Universitario
+# TP2 - Ejercicio Evento Universitario
 
-Implementación del **Trabajo Práctico N.º 1** de Programación, desarrollado en **Java** utilizando conceptos fundamentales de **Programación Orientada a Objetos (POO)**.
+Implementación del **Trabajo Práctico N.º 2** de Programación, desarrollado en **Java** utilizando conceptos fundamentales de **Programación Orientada a Objetos (POO)**.
 
 El proyecto modela la organización de eventos universitarios, permitiendo crear eventos, asignar salas, agregar actividades e inscribir estudiantes.
 
@@ -33,7 +33,7 @@ El proyecto está configurado como un módulo Java y utiliza la carpeta `src` co
 ## 📁 Estructura del proyecto
 
 ```text
-PP_TP1_50520/
+PP_TP2_50520/
 │
 ├── .idea/
 │
@@ -48,7 +48,7 @@ PP_TP1_50520/
 │   └── Taller.java
 │
 ├── .gitignore
-└── Tp1_Ejercicio_Evento.iml
+└── Tp2_Ejercicio_Evento.iml
 ```
 
 Las clases principales del dominio se encuentran dentro de `src/`, incluyendo `EventoUniversitario`, `Actividad`, `Estudiante`, `Inscripcion`, `Sala`, `Charla` y `Taller`.
@@ -117,7 +117,7 @@ Para ejecutar el proyecto se necesita:
 1. Clonar el repositorio:
 
 ```bash
-git clone https://github.com/facufrau/PP_TP1_50520.git
+git clone https://github.com/facufrau/PP_TP2_50520.git
 ```
 
 2. Abrir el proyecto en IntelliJ IDEA.
@@ -198,4 +198,4 @@ El ejercicio busca reforzar el diseño de clases, las relaciones entre objetos, 
 **Facundo Frau**
 
 Repositorio:  
-https://github.com/facufrau/PP_TP1_50520
+https://github.com/facufrau/PP_TP2_50520
